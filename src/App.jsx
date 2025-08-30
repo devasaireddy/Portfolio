@@ -185,15 +185,13 @@ function App() {
                       Download Resume
                     </button>
                   </div>
-                </div>
-                <div className="hero-image">
-                  <div className="profile-circle">
-           
-                    
-                    <img src="profileImage.jpeg" alt="Profile" />
                   </div>
+              <div className="about-image">
+                <div className="profile-circle">
+                 <img src="profile.jpeg" alt="Deva Sai Reddy" />
                 </div>
               </div>
+            </div>
 
               <div className="section">
                 <h2>Featured Projects</h2>
@@ -255,7 +253,7 @@ function App() {
                   </div>
                   <div className="about-image">
                     <div className="profile-circle">
-                      <img src="profileImage.jpeg" alt="profile" />
+                      <img src="profile.jpeg" alt="profile" />
                     </div>
                   </div>
                 </div>
