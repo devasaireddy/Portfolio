@@ -173,6 +173,7 @@ function App() {
             <div className="tab-content">
               <div className="hero-section">
                 <div className="hero-content">
+                  <h1>      vdfgd  </h1>
                   <h1>KATHA DEVA SAI REDDY</h1>
                   <p>Passionate Developer specializing in Python, AI/ML, and Frontend Development</p>
                   <div className="hero-buttons">
