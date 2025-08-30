@@ -188,8 +188,9 @@ function App() {
                 </div>
                 <div className="hero-image">
                   <div className="profile-circle">
+           
                     
-                    <img src="profileImage.jpeg" alt="Deva Sai Reddy" />
+                    <img src="profileImage.jpeg" alt="Profile" />
                   </div>
                 </div>
               </div>
@@ -254,7 +255,7 @@ function App() {
                   </div>
                   <div className="about-image">
                     <div className="profile-circle">
-                      <img src="profileImage.jpeg" alt="Deva Sai Reddy" />
+                      <img src="profileImage.jpeg" alt="profile" />
                     </div>
                   </div>
                 </div>
