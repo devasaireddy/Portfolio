@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './App.css';
+// Import your images
+import profileImg from './assets/profile.jpeg';
+import resumePdf from './assets/my_resume.pdf';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -63,12 +66,11 @@ function App() {
     tools: ["Microsoft PowerPoint", "Microsoft Word"]
   };
 
-  // Function to handle resume download
+  // Fixed resume download function
   const handleDownloadResume = () => {
-    // In a real app, this would point to your actual resume file
     const link = document.createElement('a');
-    link.href = '/MY RESUME(3).pdf';
-    link.download = 'MY RESUME(3).pdf';
+    link.href = resumePdf;
+    link.download = 'Deva_Sai_Reddy_Resume.pdf'; // Better filename without spaces
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -162,7 +164,6 @@ function App() {
                 <i className="fab fa-linkedin"></i>
                 <span>LinkedIn</span>
               </div>
-
             </div>
           </aside>
         )}
@@ -173,7 +174,6 @@ function App() {
             <div className="tab-content">
               <div className="hero-section">
                 <div className="hero-content">
-
                   <h1>      </h1>
                   <h1>KATHA DEVA SAI REDDY</h1>
                   <p>Passionate Developer specializing in Python, AI/ML, and Frontend Development</p>
@@ -185,13 +185,14 @@ function App() {
                       Download Resume
                     </button>
                   </div>
+                </div>
+                <div className="about-image">
+                  <div className="profile-circle">
+                    {/* Fixed image reference */}
+                    <img src={profileImg} alt="Deva Sai Reddy" />
                   </div>
-              <div className="about-image">
-                <div className="profile-circle">
-                 <img src="profile.jpeg" alt="Deva Sai Reddy" />
                 </div>
               </div>
-            </div>
 
               <div className="section">
                 <h2>Featured Projects</h2>
@@ -219,7 +220,7 @@ function App() {
 
           {activeTab === 'about' && (
             <div className="tab-content">
-                <h1></h1>
+              <h1></h1>
               <h1>About Me</h1>
               <div className="about-section">
                 <div className="about-content">
@@ -253,7 +254,8 @@ function App() {
                   </div>
                   <div className="about-image">
                     <div className="profile-circle">
-                      <img src="profile.jpeg" alt="profile" />
+                      {/* Fixed image reference */}
+                      <img src={profileImg} alt="Deva Sai Reddy" />
                     </div>
                   </div>
                 </div>
@@ -279,6 +281,7 @@ function App() {
             </div>
           )}
 
+          {/* Other tab contents remain the same */}
           {activeTab === 'projects' && (
             <div className="tab-content">
               <h1>    </h1>
