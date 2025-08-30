@@ -173,6 +173,8 @@ function App() {
             <div className="tab-content">
               <div className="hero-section">
                 <div className="hero-content">
+
+                  <h1>      </h1>
                   <h1>KATHA DEVA SAI REDDY</h1>
                   <p>Passionate Developer specializing in Python, AI/ML, and Frontend Development</p>
                   <div className="hero-buttons">
@@ -186,8 +188,8 @@ function App() {
                 </div>
                 <div className="hero-image">
                   <div className="profile-circle">
-
-                    <img src="my linkdin photo.jpeg" alt="Deva Sai Reddy" />
+                    
+                    <img src="profileImage.jpeg" alt="Deva Sai Reddy" />
                   </div>
                 </div>
               </div>
@@ -252,8 +254,7 @@ function App() {
                   </div>
                   <div className="about-image">
                     <div className="profile-circle">
-                      {/* Add your jpeg here as well */}
-                      <img src="my linkdin photo.jpeg" alt="Profile" />
+                      <img src="profileImage.jpeg" alt="Deva Sai Reddy" />
                     </div>
                   </div>
                 </div>
